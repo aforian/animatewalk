@@ -308,10 +308,10 @@
 .right-arm.sayhi {
     top: 100%;
     transform: rotate(-150deg);
-    -o-transform: rotate(8deg);
-    -ms-transform: rotate(8deg);
-    -moz-transform: rotate(8deg);
-    -webkit-transform: rotate(8deg);
+    -o-transform: rotate(-150deg);
+    -ms-transform: rotate(-150deg);
+    -moz-transform: rotate(-150deg);
+    -webkit-transform: rotate(-150deg);
 	animation: sayhi 0.5s 1s infinite alternate linear;
     -webkit-animation: sayhi 0.5s 1s infinite alternate linear;
     transition: all 1s linear;
