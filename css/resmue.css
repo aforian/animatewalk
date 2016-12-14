@@ -361,8 +361,6 @@
 }
 .left-leg {
     left: 0;
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
 }
 .right-leg {
     right: 0;
@@ -373,7 +371,7 @@
 }
 .right-leg.active {
     animation: walk 0.5s infinite linear;
-    -webkit-animation: walk 0.5s 0.25s infinite linear;
+    -webkit-animation: walk 0.5s infinite linear;
 }
 .left-foot, .right-foot {
 	position: absolute;
