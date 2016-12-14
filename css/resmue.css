@@ -17,11 +17,19 @@
         left: 0;
         top: 100%;
         transform: rotate(-150deg);
+        -o-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+        -moz-transform: rotate(-150deg);
+        -webkit-transform: rotate(-150deg);
     }
     100%{
         left: -20%;
         top: 100%;
         transform: rotate(-120deg);
+        -o-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+        -moz-transform: rotate(-120deg);
+        -webkit-transform: rotate(-120deg);
     }
 }
 
@@ -87,6 +95,9 @@
     height: 20%;
     background-color: #ffe9b7;
     border-radius: 100% 100% 80% 80%;
+    -o-border-radius: 100% 100% 80% 80%;
+    -moz-border-radius: 100% 100% 80% 80%;
+    -webkit-border-radius: 100% 100% 80% 80%;
 }
 .boy-head:before, .boy-head:after {
     z-index: -1;
@@ -100,10 +111,16 @@
 .boy-head:before {
     left: -15%;
     border-radius: 50% 0 0 100% ;
+    -o-border-radius: 50% 0 0 100% ;
+    -moz-border-radius: 50% 0 0 100% ;
+    -webkit-border-radius: 50% 0 0 100% ;
 }
 .boy-head:after {
     right: -15%;
     border-radius: 0 50% 100% 0 ;
+    -o-border-radius: 0 50% 100% 0 ;
+    -moz-border-radius: 0 50% 100% 0 ;
+    -webkit-border-radius: 0 50% 100% 0 ;
 }
 .hair{
     position: absolute;
@@ -113,7 +130,14 @@
     height: 60%;
     background-color: #333;
     border-radius: 80% 60% 0 0;
+    -o-border-radius: 80% 60% 0 0;
+    -moz-border-radius: 80% 60% 0 0;
+    -webkit-border-radius: 80% 60% 0 0;
     transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
 }
 .hair:before{
     content: '';
@@ -124,7 +148,14 @@
     height: 25px;
     background-color: #333;
     border-radius: 80% 150% 0px 0px;
+    -o-border-radius: 80% 150% 0px 0px;
+    -moz-border-radius: 80% 150% 0px 0px;
+    -webkit-border-radius: 80% 150% 0px 0px;
     transform:rotate(38deg) scaleX(0.9);
+    -o-transform:rotate(38deg) scaleX(0.9);
+    -ms-transform:rotate(38deg) scaleX(0.9);
+    -moz-transform:rotate(38deg) scaleX(0.9);
+    -webkit-transform:rotate(38deg) scaleX(0.9);
 }
 .glasses{
     position: absolute;
@@ -134,7 +165,7 @@
     height: 7%;
     background-color: #333;
 }
-.glasses:before{
+.glasses:before, .glasses:after{
     content: '';
     position: absolute;
     top: -150%;
@@ -144,17 +175,15 @@
     border: 4px solid #333;
     background-color: #fff;
     border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.glasses:before{
+    left: -200%;
 }
 .glasses:after{
-    content: '';
-    position: absolute;
-    top: -150%;
     right: -200%;
-    width: 150%;
-    height: 250%;
-    border: 4px solid #333;
-    background-color: #fff;
-    border-radius: 2px;
 }
 .mouth {
 	position: absolute;
@@ -164,6 +193,9 @@
     height: 10%;
     background-color: #ffbbbb;
     border-radius: 0px 0px 5px 5px;
+    -o-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
 }
 .boy-body {
 	position: relative;
@@ -173,6 +205,9 @@
     height: 30%;
     background-color: #EEE;
     border-radius: 15% 15% 0 0 ; 
+    -o-border-radius: 15% 15% 0 0 ; 
+    -moz-border-radius: 15% 15% 0 0 ; 
+    -webkit-border-radius: 15% 15% 0 0 ; 
 }
 .boy-body:before {
     z-index: -1;
@@ -192,25 +227,49 @@
     height: 60%;
     background-color: #DDD;
     border-radius: 100px;
+    -o-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
     transform-origin:50% 0;
+    -o-transform-origin:50% 0;
+    -ms-transform-origin:50% 0;
+    -moz-transform-origin:50% 0;
+    -webkit-transform-origin:50% 0;
     transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
 }
 .left-shoulder {
     left: -10%;
     transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
 }
 .left-shoulder.active{
     animation: walk-hand 0.5s infinite linear;
+    -webkit-animation: walk-hand 0.5s infinite linear;
 }
 .right-shoulder {
     right: -10%;
     transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
 }
 .right-shoulder.active{
     animation: walk-hand 0.5s 0.25s infinite linear;
+    -webkit-animation: walk-hand 0.5s 0.25s infinite linear;
 }
 .right-shoulder.sayhi {
     transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
 }
 .left-arm, .right-arm {
 	position: absolute;
@@ -220,20 +279,46 @@
     height: 100%;
     background-color: #EEE;
     border-radius: 100px 100px 0 0 ;
+    -o-border-radius: 100px 100px 0 0 ;
+    -moz-border-radius: 100px 100px 0 0 ;
+    -webkit-border-radius: 100px 100px 0 0 ;
     transform-origin:50% 0;
+    -o-transform-origin:50% 0;
+    -ms-transform-origin:50% 0;
+    -moz-transform-origin:50% 0;
+    -webkit-transform-origin:50% 0;
 }
 .left-arm {
     transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
 }
 .right-arm {
     transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
     transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
 }
 .right-arm.sayhi {
     top: 100%;
     transform: rotate(-150deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
 	animation: sayhi 0.5s 1s infinite alternate linear;
+    -webkit-animation: sayhi 0.5s 1s infinite alternate linear;
     transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
 }
 .left-arm:before, .right-arm:before{
     content: '';
@@ -245,9 +330,15 @@
 }
 .left-arm:before{
     border-radius: 0 0 50px 100px;
+    -o-border-radius: 0 0 50px 100px;
+    -moz-border-radius: 0 0 50px 100px;
+    -webkit-border-radius: 0 0 50px 100px;
 }
 .right-arm:before{
     border-radius: 0 0 100px 50px;
+    -o-border-radius: 0 0 100px 50px;
+    -moz-border-radius: 0 0 100px 50px;
+    -webkit-border-radius: 0 0 100px 50px;
 }
 .boy-nextbody {
 	position: relative;
@@ -264,20 +355,25 @@
     height: 300%;
     background-color: #2e55ad;
     border-radius: 0 0 200px 200px;
-    
+    -o-border-radius: 0 0 200px 200px;
+    -moz-border-radius: 0 0 200px 200px;
+    -webkit-border-radius: 0 0 200px 200px;
 }
 .left-leg {
     left: 0;
     animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 .right-leg {
     right: 0;
 }
 .left-leg.active {
     animation: walk 0.5s 0.25s infinite linear;
+    -webkit-animation: walk 0.5s 0.25s infinite linear;
 }
 .right-leg.active {
     animation: walk 0.5s infinite linear;
+    -webkit-animation: walk 0.5s 0.25s infinite linear;
 }
 .left-foot, .right-foot {
 	position: absolute;
@@ -298,6 +394,9 @@
     border-width:0 0 5px 0px;
     border-color: #5a3c2a;
     border-radius: 150px 150px 0 0 ;
+    -o-border-radius: 150px 150px 0 0 ;
+    -moz-border-radius: 150px 150px 0 0 ;
+    -webkit-border-radius: 150px 150px 0 0 ;
 }
 
 .btn-sayhi, .btn-walk {
