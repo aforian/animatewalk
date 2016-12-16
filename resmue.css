@@ -12,84 +12,124 @@
 @media (min-width: 1800px) {
 
 }
-@keyframes sayhi {
-    0%{
-        left: 0;
-        top: 100%;
-        transform: rotate(-150deg);
-        -o-transform: rotate(-150deg);
-        -ms-transform: rotate(-150deg);
-        -moz-transform: rotate(-150deg);
-        -webkit-transform: rotate(-150deg);
-    }
-    100%{
-        left: -20%;
-        top: 100%;
-        transform: rotate(-120deg);
-        -o-transform: rotate(-120deg);
-        -ms-transform: rotate(-120deg);
-        -moz-transform: rotate(-120deg);
-        -webkit-transform: rotate(-120deg);
-    }
+*{
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+#nav-bar {
+    display: inline-block;
+	position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    padding: 0 30px;
+    background-color: rgba(255, 255, 255, 0.69);
+    font-size: 20px;
+    color: #333333;
+    z-index: 900;
+    box-shadow: 0 4px 4px #dddddd;
+}
+.nav-left {
+    float: left;
+    line-height: 70px;
+}
+.nav-right {
+    float: right;
+}
+.nav-menu {
+	display: inline-block;
+}
+.nav-item {
+    float: left;
+    padding: 10px 30px 0 10px;
+    line-height: 30px;
+	text-decoration: none;
+    color: #333333;
+    transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.nav-item.active {
+	color: deepskyblue;
+}
+.nav-item:hover {
+	color: deepskyblue;
+}
+.page-bar {
+    position: relative;
+    float: left;
+	width: 100%;
+    height: 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+.page-progress {
+    float: left;
+    width: 23%;
+	height: 10px;
+    background-color: #a8a8a8;
+    border-radius: 10px;
 }
 
-@keyframes walk {
-    0%{
-        width: 45%;
-        height: 300%;
-    }
-    25%{
-        width: 46%;
-        height: 320%;
-    }
-    50%{
-        width: 45%;
-        height: 300%;
-    }
-    75%{
-        width: 44%;
-        height: 270%;
-    }
-    100%{
-        width: 45%;
-        height: 300%;
-    }
+.home-section {
+    position: relative;
+    float: left;
+    width: 100%; 
+	height: 100vh;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
 }
-@keyframes walk-hand {
-    0%{
-        width: 32%;
-        height: 60%;
-    }
-    25%{
-        width: 34%;
-        height: 65%;
-    }
-    50%{
-        width: 32%;
-        height: 60%;
-    }
-    75%{
-        width: 30%;
-        height: 55%;
-    }
-    100%{
-        width: 32%;
-        height: 60%;
-    }
+#footer {
+	height: 40px !important;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height:100%;
+    padding: 0;
+}
+.title{
+    position: fixed;
+    top: 40%;
+    left: 10%;
+    text-align: left;
 }
 
 
+
+
+.blocker{
+    padding: 10px;
+    
+}
+.btn-sayhi, .btn-walk {
+    position: relative;
+    top: 20px;
+	width: 100px;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    display: none;
+}
 .boy {
     position: fixed;
-    top: 20px;
-    left: 120px;
+    top: 30%;
+    left: calc(50% - 75px);
     width: 150px;
-    height: 300px;
-    display: inline-block;
 }
 .boy-head {
 	position: relative;
-    left: calc(50% - 16.5%);
     top: 0px;
     width: 33%;
     height: 20%;
@@ -145,7 +185,7 @@
     top: 40%;
     right: -15%;
     width: 55%;
-    height: 25px;
+    height: 70%;
     background-color: #333;
     border-radius: 80% 150% 0px 0px;
     -o-border-radius: 80% 150% 0px 0px;
@@ -199,7 +239,6 @@
 .boy-body {
 	position: relative;
     top: 2%;
-    left: 30%;
     width: 40%;
     height: 30%;
     background-color: #EEE;
@@ -260,8 +299,8 @@
     -webkit-transform: rotate(-15deg);
 }
 .right-shoulder.active{
-    animation: walk-hand 0.5s 0.25s infinite linear;
-    -webkit-animation: walk-hand 0.5s 0.25s infinite linear;
+    animation: walk-hand 0.5s infinite reverse  linear;
+    -webkit-animation: walk-hand 0.5s infinite reverse linear;
 }
 .right-shoulder.sayhi {
     transform: rotate(-35deg);
@@ -311,7 +350,7 @@
     -o-transform: rotate(-150deg);
     -ms-transform: rotate(-150deg);
     -moz-transform: rotate(-150deg);
-    -webkit-transform: rotate(-150deg); 
+    -webkit-transform: rotate(-150deg);
 	animation: sayhi 0.5s 1s infinite alternate linear;
     -webkit-animation: sayhi 0.5s 1s infinite alternate linear;
     transition: all 1s linear;
@@ -341,7 +380,6 @@
 }
 .boy-nextbody {
 	position: relative;
-    left: 30%;
     width: 40%;
     height: 7%;
     background-color: #2e55ad;
@@ -365,8 +403,8 @@
     right: 0;
 }
 .left-leg.active {
-    animation: walk 0.5s 0.25s infinite linear;
-    -webkit-animation: walk 0.5s 0.25s infinite linear;
+    animation: walk 0.5s infinite reverse linear;
+    -webkit-animation: walk 0.5s infinite reverse linear;
 }
 .right-leg.active {
     animation: walk 0.5s infinite linear;
@@ -396,15 +434,260 @@
     -webkit-border-radius: 150px 150px 0 0 ;
 }
 
-.btn-sayhi, .btn-walk {
-    position: relative;
-    top: 20px;
-	width: 100px;
-    height: 40px;
-    margin: 20px;
-    text-align: center;
-    line-height: 40px;
-    background-color: beige;
-    cursor: pointer;
-}
 
+@keyframes sayhi {
+    0%{
+        left: 0;
+        top: 100%;
+        transform: rotate(-150deg);
+        -o-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+        -moz-transform: rotate(-150deg);
+        -webkit-transform: rotate(-150deg);
+    }
+    100%{
+        left: -20%;
+        top: 100%;
+        transform: rotate(-120deg);
+        -o-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+        -moz-transform: rotate(-120deg);
+        -webkit-transform: rotate(-120deg);
+    }
+}
+-o-@keyframes sayhi {
+    0%{
+        left: 0;
+        top: 100%;
+        transform: rotate(-150deg);
+        -o-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+        -moz-transform: rotate(-150deg);
+        -webkit-transform: rotate(-150deg);
+    }
+    100%{
+        left: -20%;
+        top: 100%;
+        transform: rotate(-120deg);
+        -o-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+        -moz-transform: rotate(-120deg);
+        -webkit-transform: rotate(-120deg);
+    }
+}
+-moz-@keyframes sayhi {
+    0%{
+        left: 0;
+        top: 100%;
+        transform: rotate(-150deg);
+        -o-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+        -moz-transform: rotate(-150deg);
+        -webkit-transform: rotate(-150deg);
+    }
+    100%{
+        left: -20%;
+        top: 100%;
+        transform: rotate(-120deg);
+        -o-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+        -moz-transform: rotate(-120deg);
+        -webkit-transform: rotate(-120deg);
+    }
+}
+-webkit-@keyframes sayhi {
+    0%{
+        left: 0;
+        top: 100%;
+        transform: rotate(-150deg);
+        -o-transform: rotate(-150deg);
+        -ms-transform: rotate(-150deg);
+        -moz-transform: rotate(-150deg);
+        -webkit-transform: rotate(-150deg);
+    }
+    100%{
+        left: -20%;
+        top: 100%;
+        transform: rotate(-120deg);
+        -o-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+        -moz-transform: rotate(-120deg);
+        -webkit-transform: rotate(-120deg);
+    }
+}
+@keyframes walk {
+    0%{
+        width: 45%;
+        height: 300%;
+    }
+    25%{
+        width: 46%;
+        height: 320%;
+    }
+    50%{
+        width: 45%;
+        height: 300%;
+    }
+    75%{
+        width: 44%;
+        height: 270%;
+    }
+    100%{
+        width: 45%;
+        height: 300%;
+    }
+}
+-o-@keyframes walk {
+    0%{
+        width: 45%;
+        height: 300%;
+    }
+    25%{
+        width: 46%;
+        height: 320%;
+    }
+    50%{
+        width: 45%;
+        height: 300%;
+    }
+    75%{
+        width: 44%;
+        height: 270%;
+    }
+    100%{
+        width: 45%;
+        height: 300%;
+    }
+}
+-moz-@keyframes walk {
+    0%{
+        width: 45%;
+        height: 300%;
+    }
+    25%{
+        width: 46%;
+        height: 320%;
+    }
+    50%{
+        width: 45%;
+        height: 300%;
+    }
+    75%{
+        width: 44%;
+        height: 270%;
+    }
+    100%{
+        width: 45%;
+        height: 300%;
+    }
+}
+-webkit-@keyframes walk {
+    0%{
+        width: 45%;
+        height: 300%;
+    }
+    25%{
+        width: 46%;
+        height: 320%;
+    }
+    50%{
+        width: 45%;
+        height: 300%;
+    }
+    75%{
+        width: 44%;
+        height: 270%;
+    }
+    100%{
+        width: 45%;
+        height: 300%;
+    }
+}
+@keyframes walk-hand {
+    0%{
+        width: 32%;
+        height: 60%;
+    }
+    25%{
+        width: 34%;
+        height: 65%;
+    }
+    50%{
+        width: 32%;
+        height: 60%;
+    }
+    75%{
+        width: 30%;
+        height: 55%;
+    }
+    100%{
+        width: 32%;
+        height: 60%;
+    }
+}
+-o-@keyframes walk-hand {
+    0%{
+        width: 32%;
+        height: 60%;
+    }
+    25%{
+        width: 34%;
+        height: 65%;
+    }
+    50%{
+        width: 32%;
+        height: 60%;
+    }
+    75%{
+        width: 30%;
+        height: 55%;
+    }
+    100%{
+        width: 32%;
+        height: 60%;
+    }
+}
+-moz-@keyframes walk-hand {
+    0%{
+        width: 32%;
+        height: 60%;
+    }
+    25%{
+        width: 34%;
+        height: 65%;
+    }
+    50%{
+        width: 32%;
+        height: 60%;
+    }
+    75%{
+        width: 30%;
+        height: 55%;
+    }
+    100%{
+        width: 32%;
+        height: 60%;
+    }
+}
+-webkit-@keyframes walk-hand {
+    0%{
+        width: 32%;
+        height: 60%;
+    }
+    25%{
+        width: 34%;
+        height: 65%;
+    }
+    50%{
+        width: 32%;
+        height: 60%;
+    }
+    75%{
+        width: 30%;
+        height: 55%;
+    }
+    100%{
+        width: 32%;
+        height: 60%;
+    }
+}
