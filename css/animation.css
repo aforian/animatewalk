@@ -1,0 +1,49 @@
+.title{
+    -skrollr-animation-name: title-ani;
+}
+@-skrollr-keyframes title-ani {
+    0{
+        left:10%;
+    }
+
+    300{
+        left:-100%;
+    }
+}
+
+.map{
+    -skrollr-animation-name: map-ani;
+}
+@-skrollr-keyframes map-ani {
+    200{
+        left: -100%;
+    }
+    300{
+        left: 0%;
+    }
+    500{
+        left: 0%;
+    }
+    600{
+        left: 100%;
+    }
+}
+
+.grad-wrap {
+	-skrollr-animation-name: anigrad;
+}
+@-skrollr-keyframes anigrad {
+    700{
+        right:100%;
+    }
+    1000{
+        right:0%;
+    }
+    1500{
+        right:0%;
+    }
+    1800{
+        right:-140px;
+    }
+}
+

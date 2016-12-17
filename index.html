@@ -2,54 +2,114 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Alex Ian</title>
     <script src="script/jquery-3.1.1.min.js"></script>
     <script src="script/jquery.easing.1.3.js"></script>
     <script src="script/jquery-scrollevent.js"></script>
     <script src="script/jquery.mousewheel.min.js"></script>
-    <script src="script/ScrollMagic.min.js"></script>
     <script src="script/resume.js"></script>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/resmue.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css" data-skrollr-stylesheet>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css" data-skrollr-stylesheet>
 </head>
 <body>
+    <!--nav begin-->
     <nav id="nav-bar">
         <div class="nav-left">
-            AlexIan
+            ALEX IAN
         </div>
         <div class="nav-right">
             <div class="nav-menu">
-                <a class="nav-item" href="#homepage">Hello</a>
+                <a class="nav-item active" href="#homepage">Hello</a>
                 <a class="nav-item" href="#about">About</a>
                 <a class="nav-item" href="#skill">Skill</a>
                 <a class="nav-item" href="#portfolio">Portfolio</a>
+                <a class="nav-item" href="#contact">Contact</a>
+                <div class="page-bar">
+                    <div class="page-progress"></div>
+                </div>
             </div>
-            <div class="page-bar">
-                <div class="page-progress"></div>
+            <div class="nav-icon">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
             </div>
         </div>
     </nav>
-    
+    <!--nav end-->
     <section id="homepage" class="home-section">
-            
         <div class="container">
             <div class="title">
                 <h1>HI! I'm Alex Ian!</h1>
                 <p>Front-End Engineer</p>
+                <a href="#"><div class="resume-dn">Download Resume</div></a>
             </div>
         </div>
     </section>
-    <section id="about" class="home-section">about</section><section id="skill" class="home-section">skill</section>
-    <section id="portfolio" class="home-section">portfolio</section>
-    <section id="footer" class="home-section">footer</section>
+    <section id="about" class="home-section">
+        <div class="container">
+            <div class="map">
+                <div class="plane"></div>
+            </div>
+            <div class="grad-wrap">
+                <div class="grad-hat">
+                    <div class="grad-top">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="grad-cloth">
+                    <div class="grad-neck">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill" class="home-section">
+        <div class="container">
+            
+        </div>
+    </section>
+    <section id="portfolio" class="home-section">
+        <div class="container">
+            <div class="portfolio-wrap">
+                <div class="portfolio-block">
+                    <div class="portfolio-img"></div>
+                    <div class="portfolio-content">
+                        <p>Stay Children</p>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <div class="portfolio-img"></div>
+                    <div class="portfolio-content">name</div>
+                </div>
+                <div class="portfolio-block">
+                    <div class="portfolio-img"></div>
+                    <div class="portfolio-content">name</div>
+                </div>
+                <div class="portfolio-block">
+                    <div class="portfolio-img"></div>
+                    <div class="portfolio-content">name</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="home-section">
+        <div id="footer" class="home-section">See You!</div>
+    </section>
     
     
     
     <div class="boy">
         <div class="boy-head">
             <div class="hair"></div>
-            <div class="glasses"></div>
+            <div class="glasses">
+                <div class="left-glass">
+                    <div class="glass-white"></div>
+                </div>
+                <div class="right-glass">
+                    <div class="glass-white"></div>
+                </div>
+            </div>
             <div class="mouth"></div>
         </div>
         <div class="boy-body">
@@ -62,15 +122,21 @@
         </div>
         <div class="boy-nextbody">
             <div class="left-leg">
-                <div class="left-foot"></div>
+                <div class="left-foot">
+                    
+                </div>
             </div>
             <div class="right-leg">
                 <div class="right-foot"></div>
             </div>
         </div>
     </div>
-    <div class="btn-sayhi">sayhi</div>
-    <div class="btn-walk">walk</div>
     
+    <link rel="stylesheet" type="text/css" href="css/animation.css" data-skrollr-stylesheet />
+    <script type="text/javascript" src="script/skrollr.stylesheets.min.js"></script>
+    <script type="text/javascript" src="script/skrollr.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
 </body>
 </html>
