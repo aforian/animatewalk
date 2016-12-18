@@ -42,7 +42,7 @@ a{
     color: #555;
 }
 body{
-    font-family: sans-serif;
+    font-family:'Advent Pro', sans-serif;
     background-color: #ffffff;
 }
 #nav-bar {
@@ -128,9 +128,9 @@ body{
 #homepage {
     top: 0;
     left: 0;
-    background-color: #2e7b9b;
+    background-color: #63b7f5;
 }
-#about {
+#about-a {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -142,7 +142,19 @@ body{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #8cdd81;
+    background: #8cdd81 url(../image/university.svg) 20% 70%/80% no-repeat;
+}
+#about-c {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #63b7f5  20% 70%/80% no-repeat;
+}
+#skill {
+	position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #8cdd81 no-repeat;
 }
 #footer {
     position: absolute;
@@ -169,14 +181,7 @@ body{
     vertical-align:middle;
     background:#f00;
 }
-.title{
-    z-index: 10;
-    position: fixed;
-    top: 45%;
-    left: 10%;
-    padding: 0 10px;
-    text-align: left;
-}
+
 .resume-dn {
     margin: 10px 0;
 	padding: 10px;

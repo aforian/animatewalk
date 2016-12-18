@@ -1,19 +1,19 @@
-.title{
-    -skrollr-animation-name: title-ani;
+.homepage-content {
+    -skrollr-animation-name: homepage-content-ani;
 }
-@-skrollr-keyframes title-ani {
+@-skrollr-keyframes homepage-content-ani {
     0{
-        left:10%;
+        left:6%;
     }
 
     600{
         left:-100%;
     }
 }
-#about {
-    -skrollr-animation-name: about-ani;
+#about-a {
+    -skrollr-animation-name: about-a-ani;
 }
-@-skrollr-keyframes about-ani {
+@-skrollr-keyframes about-a-ani {
     1000{
        top: 100%;
     }
@@ -38,19 +38,34 @@
         left:73vw;
     }
 }
-
-.plane {
-    -skrollr-animation-name: plane-ani;
+.about-text{
+     -skrollr-animation-name: about-text-ani;
 }
-@-skrollr-keyframes plane-ani {
+@-skrollr-keyframes about-text-ani {
+    1600{
+        opacity: 0;
+        top: 57%;
+    }
+    2300{
+        opacity: 1;
+        top: 55%;
+    }
+    2800{
+        top: 53%;
+    }
+}
+.about-a-pass {
+    -skrollr-animation-name: about-a-pass-ani;
+}
+@-skrollr-keyframes about-a-pass-ani {
     3600{
-        top: 0%;
+        top: 100%;
     }
     4000{
-        top: -53%;
+        top: 44%;
     }
     4600{
-        top: -53%;
+        top: -50%;
     }
     5000{
         top: -100%;
@@ -67,16 +82,204 @@
        top: 0%;
     }
 }
-
+.about-b-text{
+    -skrollr-animation-name: about-b-text-ani;
+}
+@-skrollr-keyframes about-b-text-ani {
+    4600{
+        opacity: 0;
+        top: 0%;
+    }
+    5400{
+        opacity: 1;
+        top: 20%;
+    }
+    5800{
+        top: 23%;
+    }
+}
 .grad-wrap {
 	-skrollr-animation-name: grad-ani;
 }
 @-skrollr-keyframes grad-ani {
-    4000{
+    4800{
         bottom:100%;
     }
-    5000{
+    5400{
         bottom: 10%;
     }
+    6400{
+        bottom: 10%;
+    }
+    7000{
+        bottom:110%;
+    }
 }
-
+.about-b-pass {
+    -skrollr-animation-name: about-b-pass-ani;
+}
+@-skrollr-keyframes about-b-pass-ani {
+    6000{
+        top: 100%;
+    }
+    6400{
+        top: 56%;
+    }
+    7000{
+        top: -44%;
+    }
+    7400{
+        top: -100%;
+    }
+}
+#about-c {
+    -skrollr-animation-name: about-c-ani;
+}
+@-skrollr-keyframes about-c-ani {
+    6400{
+       top: 100%;
+    }
+    7000{
+       top: 0%;
+    }
+}
+.about-c-text{
+    -skrollr-animation-name: about-c-text-ani;
+}
+@-skrollr-keyframes about-c-text-ani {
+    7000{
+        opacity: 0;
+        top: 0%;
+    }
+    7800{
+        opacity: 1;
+        top: 20%;
+    }
+    8200{
+        top: 23%;
+    }
+}
+.coding-desktop{
+    -skrollr-animation-name: coding-desktop-ani;
+}
+@-skrollr-keyframes coding-desktop-ani {
+    7400{
+       opacity: 1;
+    }
+    8400{
+       opacity: 0;
+    }
+}
+.web-desktop{
+    -skrollr-animation-name: web-desktop-ani;
+}
+@-skrollr-keyframes web-desktop-ani {
+    7400{
+       opacity: 0;
+    }
+    8400{
+       opacity: 1;
+    }
+}
+.web-tablet{
+    -skrollr-animation-name: web-tablet-ani;
+}
+@-skrollr-keyframes web-tablet-ani {
+    8400{
+        opacity: 0;
+        left: -5%;
+    }
+    8800{
+        opacity: 1;
+        left: 0;
+    }
+}
+.web-mobile{
+    -skrollr-animation-name: web-mobile-ani;
+}
+@-skrollr-keyframes web-mobile-ani {
+    8600{
+        opacity: 0;
+        left: 5%;
+    }
+    9000{
+        opacity: 1;
+        left: 0;
+    }
+}
+#skill{
+    -skrollr-animation-name: skill-ani;
+}
+@-skrollr-keyframes skill-ani {
+    9600{
+        top: 100%;
+    }
+    10200{
+        top: 0%;
+    }
+}
+#star-a {
+	-skrollr-animation-name: star-a-ani;
+}
+@-skrollr-keyframes star-a-ani {
+    11000{
+        opacity: 0;
+        left: 20%;
+    }
+    11200{
+        opacity: 1;
+        left: 15%;
+    }
+}
+#star-b {
+	-skrollr-animation-name: star-b-ani;
+}
+@-skrollr-keyframes star-b-ani {
+    11100{
+        opacity: 0;
+        left: 30%;
+    }
+    11300{
+        opacity: 1;
+        left: 25%;
+    }
+}
+#star-c {
+	-skrollr-animation-name: star-c-ani;
+}
+@-skrollr-keyframes star-c-ani {
+    11300{
+        opacity: 0;
+        left: 40%;
+    }
+    11500{
+        opacity: 1;
+        left: 35%;
+    }
+}
+#star-d {
+	-skrollr-animation-name: star-d-ani;
+}
+@-skrollr-keyframes star-d-ani {
+    11400{
+        opacity: 0;
+        left: 50%;
+    }
+    11600{
+        opacity: 1;
+        left: 45%;
+    }
+}
+#star-e {
+	-skrollr-animation-name: star-e-ani;
+}
+@-skrollr-keyframes star-e-ani {
+    11500{
+        opacity: 0;
+        left: 60%;
+    }
+    11700{
+        opacity: 1;
+        left: 55%;
+    }
+}

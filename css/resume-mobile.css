@@ -1,9 +1,25 @@
 body{
     overflow: hidden;
+    text-align: left;
 }
 p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
+    text-align: left;
+}
+h3{
+    font-size: 28px;
+    font-weight: bolder;
+    color: #002791;
+    line-height: 1.4;
+    text-align: left;
+}
+h4{
+    font-size: 28px;
+    font-weight: bolder;
+    color: #1f6d43;
+    line-height: 1.4;
+    text-align: left;
 }
 .nav-menu{
     display: none;
@@ -28,14 +44,27 @@ p{
 .map{
     width: 100%;
 }
-.plane, .plane-b{
+.homepage-content{
+    z-index: 10;
+    position: fixed;
+    top: 45%;
+    left: 10%;
+    padding: 0 10px;
+    text-align: left;
+}
+.about-a-pass, .about-b-pass{
     z-index: 100;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
+}
+.about-a-pass{
     background: url(../image/resumeimg.svg) 100% no-repeat;
+}
+.about-b-pass{
+    background: url(../image/gradhat.svg) 100% no-repeat;
 }
 .airplane {
     position: absolute;
@@ -52,7 +81,77 @@ p{
 }
 .about-text{
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 55%;
+    left: 10%;
     text-align: left;
+}
+.about-b-text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+}
+.about-c-text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+}
+.skill-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: left;
+}
+.skill-text > h4 {
+    margin-bottom: 40px;
+}
+.skill-star {
+    position: absolute;
+    top: 30%;
+    width: 10%;
+    height: 316px;
+    text-align: left;
+}
+.skill-star > div {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-top: 39px;
+    background: url(../image/star.svg) no-repeat;
+}
+#star-a {
+	left: 15%;
+}
+#star-b {
+	left: 25%;
+}
+#star-c {
+	left: 35%;
+}
+#star-d {
+	left: 45%;
+}
+#star-e {
+	left: 55%;
+}
+.coding-desktop, .web-desktop, .web-tablet, .web-mobile {
+	position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.coding-desktop {
+    background: url(../image/coding.svg) 20% 40%/70% no-repeat;
+}
+.web-desktop {
+    background: url(../image/website_desktop.svg) 20% 40%/70% no-repeat;
+}
+.web-tablet {
+    background: url(../image/website_tablet.svg) 10% 40%/70% no-repeat;
+}
+.web-mobile {
+    background: url(../image/website_mobile.svg) 10% 40%/70% no-repeat;
 }
