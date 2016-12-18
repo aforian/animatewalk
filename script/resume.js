@@ -30,10 +30,9 @@ $(document).ready(function(){
         return false;
     })
     /*導覽列按鈕---end*/
+
     
     /*--滾動人物動態--*/
-    
-    
     $(window).bind('scrollstart', function(){
         $(".left-shoulder, .right-shoulder, .right-leg, .left-leg").addClass("active");
     });
@@ -59,5 +58,5 @@ $(document).ready(function(){
     })(jQuery);
     /*--重置人物高度end--*/
     
-    var s = skrollr.init();
+    var s = skrollr.init({});
 })

@@ -6,44 +6,77 @@
         left:10%;
     }
 
-    300{
+    600{
         left:-100%;
     }
 }
-
-.map{
-    -skrollr-animation-name: map-ani;
+#about {
+    -skrollr-animation-name: about-ani;
 }
-@-skrollr-keyframes map-ani {
-    200{
-        left: -100%;
+@-skrollr-keyframes about-ani {
+    1000{
+       top: 100%;
     }
-    300{
-        left: 0%;
+    1600{
+       top: 0%;
     }
-    500{
-        left: 0%;
+}
+.airplane {
+    -skrollr-animation-name: airplane-ani;
+}
+@-skrollr-keyframes airplane-ani {
+    2000{
+        opacity: 0;
     }
-    600{
-        left: 100%;
+    2500{
+        opacity: 1;
+        top:53vw;
+        left:20vw;
+    }
+    3500{
+        top:33vw;
+        left:73vw;
+    }
+}
+
+.plane {
+    -skrollr-animation-name: plane-ani;
+}
+@-skrollr-keyframes plane-ani {
+    3600{
+        top: 0%;
+    }
+    4000{
+        top: -53%;
+    }
+    4600{
+        top: -53%;
+    }
+    5000{
+        top: -100%;
+    }
+}
+#about-b {
+    -skrollr-animation-name: about-b-ani;
+}
+@-skrollr-keyframes about-b-ani {
+    4000{
+       top: 100%;
+    }
+    4600{
+       top: 0%;
     }
 }
 
 .grad-wrap {
-	-skrollr-animation-name: anigrad;
+	-skrollr-animation-name: grad-ani;
 }
-@-skrollr-keyframes anigrad {
-    700{
-        right:100%;
+@-skrollr-keyframes grad-ani {
+    4000{
+        bottom:100%;
     }
-    1000{
-        right:0%;
-    }
-    1500{
-        right:0%;
-    }
-    1800{
-        right:-140px;
+    5000{
+        bottom: 10%;
     }
 }
 

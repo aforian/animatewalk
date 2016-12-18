@@ -1,27 +1,4 @@
-@charset "UTF-8";
-
 @media (max-width: 699px) {
-    .nav-menu{
-        display: none;
-    }
-    .nav-icon{
-        display: inline-block;
-    }
-    
-    .boy, .grad-wrap {
-        right: 0%;
-        width: 140px;
-    }
-    .portfolio-block {
-        width: 70%;
-        margin: 5% 10% ;
-    }
-    .portfolio-content {
-        bottom: 0;
-    }
-    .map{
-        width: 100%;
-    }
 }
 @media (min-width: 700px) {
     .nav-menu{
@@ -46,6 +23,7 @@
     .boy, .grad-wrap {
         left: 43.5%;
         width: 13%;
+        top: 30%;
     }
     .portfolio-block {
         width: 20%;
@@ -54,9 +32,6 @@
     .portfolio-content {
         bottom: -58px;
     }
-}
-@media (min-width: 1800px) {
-
 }
 *{
     margin: 0px auto;
@@ -143,20 +118,31 @@ body{
 }
 
 .home-section {
-    position: relative;
-    float: left;
-    width: 100%; 
-	height: 1000px;
-    padding: 80px 0;
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
     text-align: center;
     border-bottom: 1px solid #d0d0d0;
-    overflow: hidden;
 }
 #homepage {
-    background-color: #e4f7ff;
-    width: 100%;
-    height: 800px;
+    top: 0;
+    left: 0;
+    background-color: #2e7b9b;
+}
+#about {
     position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ACDBEE url(../image/map.svg) no-repeat;
+    background-size: 150%;
+    background-position: top center;
+}
+#about-b {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #8cdd81;
 }
 #footer {
     position: absolute;
@@ -249,24 +235,18 @@ body{
     text-align: center;
     transition: all 0.4s ease;
 }
-.map{
+.map {
     position: fixed;
-    top: 20%;
+    top: 70px;
     left: 0;
-    background: #789d7b;
-}
-.map:before{
-    content: '';
-    display: inline-block;
-    padding-bottom: 100%;
-    vertical-align: middle;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #FFF;
 }
 
 
 .grad-wrap {
-    z-index: 10;
     position: fixed;
-    top: 30%;
 }
 .grad-hat {
     position: relative;
@@ -346,7 +326,7 @@ body{
 
 .boy {
     position: fixed;
-    top: 30%;
+    
 }
 .boy-head {
 	position: relative;
@@ -916,3 +896,4 @@ body{
         height: 60%;
     }
 }
+
