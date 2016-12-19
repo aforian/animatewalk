@@ -39,9 +39,9 @@
     -skrollr-animation-name: about-a-pass-ani;
 }
 @-skrollr-keyframes about-a-pass-ani {
-    3600{ transform: translate(0,100%); }
-    4000{ transform: translate(0,0%); }
-    4600{ transform: translate(0,0%); }
+    3600{ transform: translate(0,0%); }
+    4000{ transform: translate(0,-55%); }
+    4600{ transform: translate(0,-55%); }
     5000{ transform: translate(0,-100%); }
 }
 #about-b {
@@ -77,9 +77,9 @@
     -skrollr-animation-name: about-b-pass-ani;
 }
 @-skrollr-keyframes about-b-pass-ani {
-    6000{ transform: translate(0,100%); }
-    6400{ transform: translate(0,0%); }
-    7000{ transform: translate(0,0%); }
+    6000{ transform: translate(0,0%); }
+    6400{ transform: translate(0,-40%); }
+    7000{ transform: translate(0,-40%); }
     7400{ transform: translate(0,-100%); }
 }
 #about-c {
@@ -154,13 +154,22 @@
     9600{transform: translate(0,100%);}
     10200{transform: translate(0,0%);}
 }
+.skill-text{
+    -skrollr-animation-name: skill-text-ani;
+}
+@-skrollr-keyframes skill-text-ani {
+    10200{opacity: 0;
+        transform: translate(5%,0);}
+    10800{opacity: 1;
+        transform: translate(0%,0);}
+}
 #star-a {
 	-skrollr-animation-name: star-a-ani;
 }
 @-skrollr-keyframes star-a-ani {
     11000{
         opacity: 0;
-        transform: translate(5%,0);
+        transform: translate(10%,0);
     }
     11200{
         opacity: 1;
@@ -173,7 +182,7 @@
 @-skrollr-keyframes star-b-ani {
     11100{
         opacity: 0;
-        transform: translate(5%,0);
+        transform: translate(10%,0);
     }
     11300{
         opacity: 1;
@@ -186,7 +195,7 @@
 @-skrollr-keyframes star-c-ani {
     11300{
         opacity: 0;
-        transform: translate(5%,0);
+        transform: translate(10%,0);
     }
     11500{
         opacity: 1;
@@ -199,7 +208,7 @@
 @-skrollr-keyframes star-d-ani {
     11400{
         opacity: 0;
-        transform: translate(5%,0);
+        transform: translate(10%,0);
     }
     11600{
         opacity: 1;
@@ -212,10 +221,17 @@
 @-skrollr-keyframes star-e-ani {
     11500{
         opacity: 0;
-        transform: translate(5%,0);
+        transform: translate(10%,0);
     }
     11700{
         opacity: 1;
         transform: translate(0%,0);
     }
+}
+#portfolio{
+    -skrollr-animation-name: portfolio-ani;
+}
+@-skrollr-keyframes portfolio-ani {
+    12000{transform: translate(0,100%);}
+    12600{transform: translate(0,0%);}
 }

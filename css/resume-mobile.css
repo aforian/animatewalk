@@ -32,7 +32,7 @@ h4{
     right: 0%;
     width: 120px;
     height: 240px;
-    bottom: 10%;
+    top: calc(70% - 120px);
 }
 .portfolio-block {
     width: 70%;
@@ -55,9 +55,9 @@ h4{
 .about-a-pass, .about-b-pass{
     z-index: 100;
     position: absolute;
-    top: -30%;
+    top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vw;
 }
 .about-a-pass{
     background: url(../image/resumeimg.svg) top/100% no-repeat;
@@ -96,44 +96,61 @@ h4{
     left: 10%;
     text-align: left;
 }
+.skill-title {
+    position: absolute;
+    width: 200px;
+    top: 8%;
+    left: calc(50% - 100px);
+}
+.skill-title > h4{
+    text-align: center;
+    font-size: 28px;
+}
 .skill-text {
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 10%;
     text-align: left;
 }
-.skill-text > h4 {
+.skill-text > label {
+    float: left;
+    clear: both;
+    padding: 5px 10px;
     margin-bottom: 40px;
+    font-size: 22px;
+    color: #FFF;
+    background: #2f892b;
+    border-radius: 5px;
 }
 .skill-star {
     position: absolute;
-    top: 15%;
+    top: 18%;
     width: 10%;
-    height: 316px;
+    height: 288px;
     text-align: left;
 }
 .skill-star > div {
     position: relative;
     left: 0;
     width: 100%;
-    height: 40px;
-    margin-top: 39px;
+    height: 35px;
+    margin-top: 37px;
     background: url(../image/star.svg) no-repeat;
 }
 #star-a {
-	left: 15%;
+	left: 10%;
 }
 #star-b {
-	left: 25%;
+	left: 20%;
 }
 #star-c {
-	left: 35%;
+	left: 30%;
 }
 #star-d {
-	left: 45%;
+	left: 40%;
 }
 #star-e {
-	left: 55%;
+	left: 50%;
 }
 .coding-desktop, .web-desktop, .web-tablet, .web-mobile {
 	position: absolute;
