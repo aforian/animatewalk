@@ -118,8 +118,8 @@ body{
 }
 
 .home-section {
-    position: fixed;
-    top: 100%;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -131,7 +131,7 @@ body{
     background-color: #63b7f5;
 }
 #about-a {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     background: #ACDBEE url(../image/map.svg) no-repeat;
@@ -139,19 +139,19 @@ body{
     background-position: top center;
 }
 #about-b {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     background: #8cdd81 url(../image/university.svg) 20% 70%/80% no-repeat;
 }
 #about-c {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     background: #63b7f5  20% 70%/80% no-repeat;
 }
 #skill {
-	position: fixed;
+	position: absolute;
     width: 100%;
     height: 100vh;
     background: #8cdd81 no-repeat;
@@ -241,7 +241,7 @@ body{
     transition: all 0.4s ease;
 }
 .map {
-    position: fixed;
+    position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
@@ -251,7 +251,7 @@ body{
 
 
 .grad-wrap {
-    position: fixed;
+    position: absolute;
 }
 .grad-hat {
     position: relative;

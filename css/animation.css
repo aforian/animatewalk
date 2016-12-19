@@ -2,41 +2,24 @@
     -skrollr-animation-name: homepage-content-ani;
 }
 @-skrollr-keyframes homepage-content-ani {
-    0{
-        left:6%;
-    }
-
-    600{
-        left:-100%;
-    }
+    0   { transform: translate(0%,0); }
+    600 { transform: translate(-150%,0); }
 }
 #about-a {
     -skrollr-animation-name: about-a-ani;
 }
 @-skrollr-keyframes about-a-ani {
-    1000{
-       top: 100%;
-    }
-    1600{
-       top: 0%;
-    }
+    1000{ transform: translate(0,100%); }
+    1600{ transform: translate(0,0%); }
 }
 .airplane {
     -skrollr-animation-name: airplane-ani;
 }
 @-skrollr-keyframes airplane-ani {
-    2000{
-        opacity: 0;
-    }
-    2500{
-        opacity: 1;
-        top:53vw;
-        left:20vw;
-    }
-    3500{
-        top:33vw;
-        left:73vw;
-    }
+    2000{ opacity: 0; }
+    2400{ opacity: 1; 
+        transform: translate(0vw,0vw); }
+    3000{transform: translate(53vw,-20vw);}
 }
 .about-text{
      -skrollr-animation-name: about-text-ani;
@@ -44,103 +27,70 @@
 @-skrollr-keyframes about-text-ani {
     1600{
         opacity: 0;
-        top: 57%;
+        transform: translate(0,0%);
     }
     2300{
         opacity: 1;
-        top: 55%;
+        transform: translate(0,-2%);
     }
-    2800{
-        top: 53%;
-    }
+    3000{transform: translate(0,-4%); }
 }
 .about-a-pass {
     -skrollr-animation-name: about-a-pass-ani;
 }
 @-skrollr-keyframes about-a-pass-ani {
-    3600{
-        top: 100%;
-    }
-    4000{
-        top: 44%;
-    }
-    4600{
-        top: -50%;
-    }
-    5000{
-        top: -100%;
-    }
+    3600{ transform: translate(0,100%); }
+    4000{ transform: translate(0,44%); }
+    4600{ transform: translate(0,-50%); }
+    5000{ transform: translate(0,-100%); }
 }
 #about-b {
     -skrollr-animation-name: about-b-ani;
 }
 @-skrollr-keyframes about-b-ani {
-    4000{
-       top: 100%;
-    }
-    4600{
-       top: 0%;
-    }
+    4000{ transform: translate(0,100%); }
+    4600{ transform: translate(0,0%); }
 }
 .about-b-text{
     -skrollr-animation-name: about-b-text-ani;
 }
 @-skrollr-keyframes about-b-text-ani {
-    4600{
-        opacity: 0;
-        top: 0%;
+    4600{ opacity: 0;
+        transform: translate(0,-15%);
     }
-    5400{
-        opacity: 1;
-        top: 20%;
+    5400{opacity: 1;
+        transform: translate(0,0%);
     }
-    5800{
-        top: 23%;
+    5800{transform: translate(0,5%);
     }
 }
 .grad-wrap {
 	-skrollr-animation-name: grad-ani;
 }
 @-skrollr-keyframes grad-ani {
-    4800{
-        bottom:100%;
-    }
-    5400{
-        bottom: 10%;
-    }
-    6400{
-        bottom: 10%;
-    }
-    7000{
-        bottom:110%;
-    }
+    4800{transform: translate(0,-200%);}
+    5400{transform: translate(0,0%);}
+    6400{transform: translate(0,0%);}
+    7000{transform: translate(0,-220%);}
 }
 .about-b-pass {
     -skrollr-animation-name: about-b-pass-ani;
 }
 @-skrollr-keyframes about-b-pass-ani {
-    6000{
-        top: 100%;
-    }
-    6400{
-        top: 56%;
-    }
-    7000{
-        top: -44%;
-    }
-    7400{
-        top: -100%;
-    }
+    6000{ transform: translate(0,100%); }
+    6400{ transform: translate(0,56%); }
+    7000{ transform: translate(0,-44%); }
+    7400{ transform: translate(0,-100%); }
 }
 #about-c {
     -skrollr-animation-name: about-c-ani;
 }
 @-skrollr-keyframes about-c-ani {
     6400{
-       top: 100%;
+       transform: translate(0,100%);
     }
     7000{
-       top: 0%;
+       transform: translate(0,0%);
     }
 }
 .about-c-text{
@@ -149,37 +99,27 @@
 @-skrollr-keyframes about-c-text-ani {
     7000{
         opacity: 0;
-        top: 0%;
+        transform: translate(0,-15%);
     }
     7800{
         opacity: 1;
-        top: 20%;
+        transform: translate(0,0%);
     }
-    8200{
-        top: 23%;
-    }
+    8200{ transform: translate(0,5%);}
 }
 .coding-desktop{
     -skrollr-animation-name: coding-desktop-ani;
 }
 @-skrollr-keyframes coding-desktop-ani {
-    7400{
-       opacity: 1;
-    }
-    8400{
-       opacity: 0;
-    }
+    7400{opacity: 1;}
+    8400{opacity: 0;}
 }
 .web-desktop{
     -skrollr-animation-name: web-desktop-ani;
 }
 @-skrollr-keyframes web-desktop-ani {
-    7400{
-       opacity: 0;
-    }
-    8400{
-       opacity: 1;
-    }
+    7400{ opacity: 0;}
+    8400{opacity: 1;}
 }
 .web-tablet{
     -skrollr-animation-name: web-tablet-ani;
@@ -187,11 +127,11 @@
 @-skrollr-keyframes web-tablet-ani {
     8400{
         opacity: 0;
-        left: -5%;
+        transform: translate(-5%,0);
     }
     8800{
         opacity: 1;
-        left: 0;
+        transform: translate(0,0);
     }
 }
 .web-mobile{
@@ -200,23 +140,19 @@
 @-skrollr-keyframes web-mobile-ani {
     8600{
         opacity: 0;
-        left: 5%;
+        transform: translate(5%,0);
     }
     9000{
         opacity: 1;
-        left: 0;
+        transform: translate(0,0);
     }
 }
 #skill{
     -skrollr-animation-name: skill-ani;
 }
 @-skrollr-keyframes skill-ani {
-    9600{
-        top: 100%;
-    }
-    10200{
-        top: 0%;
-    }
+    9600{transform: translate(0,100%);}
+    10200{transform: translate(0,0%);}
 }
 #star-a {
 	-skrollr-animation-name: star-a-ani;
@@ -224,11 +160,11 @@
 @-skrollr-keyframes star-a-ani {
     11000{
         opacity: 0;
-        left: 20%;
+        transform: translate(5%,0);
     }
     11200{
         opacity: 1;
-        left: 15%;
+        transform: translate(0%,0);
     }
 }
 #star-b {
@@ -237,11 +173,11 @@
 @-skrollr-keyframes star-b-ani {
     11100{
         opacity: 0;
-        left: 30%;
+        transform: translate(5%,0);
     }
     11300{
         opacity: 1;
-        left: 25%;
+        transform: translate(0%,0);
     }
 }
 #star-c {
@@ -250,11 +186,11 @@
 @-skrollr-keyframes star-c-ani {
     11300{
         opacity: 0;
-        left: 40%;
+        transform: translate(5%,0);
     }
     11500{
         opacity: 1;
-        left: 35%;
+        transform: translate(0%,0);
     }
 }
 #star-d {
@@ -263,11 +199,11 @@
 @-skrollr-keyframes star-d-ani {
     11400{
         opacity: 0;
-        left: 50%;
+        transform: translate(5%,0);
     }
     11600{
         opacity: 1;
-        left: 45%;
+        transform: translate(0%,0);
     }
 }
 #star-e {
@@ -276,10 +212,10 @@
 @-skrollr-keyframes star-e-ani {
     11500{
         opacity: 0;
-        left: 60%;
+        transform: translate(5%,0);
     }
     11700{
         opacity: 1;
-        left: 55%;
+        transform: translate(0%,0);
     }
 }

@@ -58,5 +58,4 @@ $(document).ready(function(){
     })(jQuery);
     /*--重置人物高度end--*/
     
-    var s = skrollr.init({});
 })
