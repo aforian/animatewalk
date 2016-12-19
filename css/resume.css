@@ -320,10 +320,7 @@ body{
     transform: rotate(45deg);
 }
 
-.boy {
-    position: fixed;
-    
-}
+
 .boy-head {
 	position: relative;
     top: 0px;
