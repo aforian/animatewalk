@@ -1,3 +1,7 @@
+*{
+    margin: 0px auto;
+    box-sizing: border-box;
+}
 body{
     overflow: hidden;
     text-align: left;
@@ -12,31 +16,98 @@ h3{
     font-weight: bolder;
     color: #002791;
     line-height: 1.4;
-    text-align: left;
 }
 h4{
     font-size: 28px;
     font-weight: bolder;
     color: #1f6d43;
     line-height: 1.4;
-    text-align: left;
 }
-.nav-menu{
+.nav-menu {
     display: none;
 }
-.nav-icon{
-    display: inline-block;
+.nav-icon {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 70px;
+    height: 70px;
+    color: #FFFFFF;
+    line-height: 70px;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.22); 
+}
+.nav-back{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 70px;
+    height: 70px;
+    color: #FFFFFF;
+    line-height: 70px;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.22); 
+}
+#nav-mobile {
+    z-index: 99;
+    background: #727272;
+    transform: translate(100%,0);
+    -o-transform: translate(100%,0);
+    -ms-transform: translate(100%,0);
+    -moz-transform: translate(100%,0);
+    -webkit-transform: translate(100%,0);
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+#nav-mobile.active {
+    transform: translate(0%,0);
+    -o-transform: translate(0%,0);
+    -ms-transform: translate(0%,0);
+    -moz-transform: translate(0%,0);
+    -webkit-transform: translate(0%,0);
+}
+.nav-title{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 60%;
+    padding: 25px;
+    color: #FFFFFF;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+.nav-mobile-wrap{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    padding: 10%;
+}
+.nav-option {
+	float: left;
+	width: 27%;
+    line-height: 21.6vw;
+    margin: 3%;
+    border-radius: 100%;
+    font-size: 26px;
+    color: #727272;
+    background: #FFF;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.22);
 }
 .boy, .grad-wrap {
-    z-index: 20;
+    z-index: 100;
     right: 0%;
     width: 120px;
     height: 240px;
     top: calc(70% - 120px);
 }
 .portfolio-block {
-    width: 70%;
-    margin: 5% 10% ;
+    width: 100%;
+    margin-bottom: 10%;
 }
 .portfolio-content {
     bottom: 0;
@@ -44,14 +115,7 @@ h4{
 .map{
     width: 100%;
 }
-.homepage-content{
-    z-index: 10;
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    padding: 0 10px;
-    text-align: left;
-}
+
 .about-a-pass, .about-b-pass{
     z-index: 100;
     position: absolute;
@@ -78,41 +142,44 @@ h4{
     height: auto;
     transform: rotate(60deg);
 }
-.about-text{
-    position: absolute;
-    top: 55%;
-    left: 10%;
-    text-align: left;
-}
-.about-b-text{
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    text-align: left;
-}
-.about-c-text{
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    text-align: left;
-}
-.skill-title {
+
+.home-title {
     position: absolute;
     width: 200px;
-    top: 8%;
+    height: 70px;
+    top: 9%;
     left: calc(50% - 100px);
 }
-.skill-title > h4{
-    text-align: center;
-    font-size: 28px;
-}
-.skill-text {
+.section-text{
     position: absolute;
-    top: 18%;
-    left: 10%;
     text-align: left;
 }
-.skill-text > label {
+#homepage-text{
+    top: 45%;
+    left: 10%;
+    padding: 0 10px;
+}
+#about-a-text {
+    top: 55%;
+    left: 10%;
+}
+#about-b-text,#about-c-text {
+    top: 15%;
+    left: 10%;
+}
+#skill-text {
+    width: 80%;
+    top: 18%;
+    left: 10%;
+}
+#contact-text {
+    top: 20%;
+    left: 10%;
+    padding: 0;
+    list-style: none;
+}
+
+#skill-text > label {
     float: left;
     clear: both;
     padding: 5px 10px;
@@ -129,30 +196,26 @@ h4{
     width: 10%;
     height: 300px;
     text-align: left;
+    list-style: none;
+    padding: 0;
 }
-.skill-star > div {
+.skill-star > li {
     position: relative;
+    float: left;
+    clear: both;
     left: 0;
-    width: 100%;
+    width: 95%;
+    padding: 0;
     height: 38px;
     margin-top: 37px;
     background: url(../image/star.svg) no-repeat;
 }
-#star-a {
-	left: 10%;
-}
-#star-b {
-	left: 20%;
-}
-#star-c {
-	left: 30%;
-}
-#star-d {
-	left: 40%;
-}
-#star-e {
-	left: 50%;
-}
+#star-a {left: 10%;}
+#star-b {left: 20%;}
+#star-c {left: 30%;}
+#star-d {left: 40%;}
+#star-e {left: 50%;}
+
 .coding-desktop, .web-desktop, .web-tablet, .web-mobile {
 	position: absolute;
     top: 20%;
@@ -171,4 +234,29 @@ h4{
 }
 .web-mobile {
     background: url(../image/website_mobile.svg) 10% 40%/70% no-repeat;
+}
+#contact-text > li{
+    widows: 90%;
+    height: 50px;
+    margin-bottom: 25px;
+    line-height: 50px;
+}
+.contact-icon {
+    float: left;
+	width: 50px;
+    height: 50px;
+    left: 0;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 50px;
+    color: #4b658e;
+    background: #FFF;
+    text-align: center;
+    list-style: none;
+}
+.contact-info {
+    float: left;
+    color: #FFF;
+    font-size: 18px;
+    padding-left: 10px;
 }

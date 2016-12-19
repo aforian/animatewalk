@@ -24,10 +24,13 @@ $(document).ready(function(){
     });
     
     /*導覽列按鈕---*/
-    $(".nav-item").click(function(e){
+    $(".nav-item").click(function(){
         var scrollpos =  $(this).attr("href");
         $("html,body").animate({"scrollTop":$(scrollpos).offset().top},700,'easeInOutExpo');
         return false;
+    })
+    $(".nav-icon, .nav-back").click(function(){
+        $("#nav-mobile").toggleClass('active');
     })
     /*導覽列按鈕---end*/
 

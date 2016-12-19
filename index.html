@@ -35,9 +35,26 @@
                 </div>
             </div>
         </nav>
+        
+        
+        <div id="nav-mobile" class="home-section">
+            <div class="nav-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="nav-back">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="nav-title">ALEX IAN</div>
+            <div class="nav-mobile-wrap">
+                <div class="nav-option"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="nav-option"><i class="fa fa-github fa-lg" aria-hidden="true"></i></div>
+                <div class="nav-option"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></div>
+            </div>
+            
+        </div>
         <!--nav end-->
         <section id="homepage" class="home-section">
-            <div class="homepage-content">
+            <div id="homepage-text" class="section-text">
                 <h1>HI! I'm Alex Ian!</h1>
                 <p>Front-End Engineer</p>
                 <a id="dn-btn" href="#">
@@ -50,10 +67,10 @@
             <div class="airplane">
                 <img src="image/resumeimg.svg">
             </div>
-            <div class="about-text">
-                <p>Came from</p>
+            <div id="about-a-text" class="section-text">
+                <p>I came from</p>
                 <h3>Macao</h3>
-                <p>Live in</p>
+                <p>Now live in</p>
                 <h3>Taipei</h3>
             </div>
         </section>
@@ -61,7 +78,7 @@
 
         <section id="about-b" class="home-section">
             <div class="about-a-pass"></div>
-            <div class="about-b-text">
+            <div id="about-b-text" class="section-text">
                 <p>Graduated from</p>
                 <h4>Tamkang University</h4>
             </div>
@@ -70,7 +87,7 @@
 
         <section id="about-c" class="home-section">
             <div class="about-b-pass"></div>
-            <div class="about-c-text">
+            <div id="about-c-text" class="section-text">
                 <p>Fascinated by </p>
                 <h3>front-end</h3>
                 <h3>web development</h3>
@@ -82,69 +99,90 @@
         </section>
         
         <section id="skill" class="home-section">
-            <div class="skill-title">
+            <div id="skill-title" class="home-title">
                 <h4>SKILL</h4>
             </div>
-            <div class="skill-text">
+            <div id="skill-text" class="section-text">
                 <label>HTML</label>
                 <label>CSS</label>
                 <label>Javascript</label>
                 <label>jQuery</label>
             </div>
             <div class="star-wrap">
-                <div id="star-a" class="skill-star">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="star-b" class="skill-star">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="star-c" class="skill-star">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="star-d" class="skill-star">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div id="star-e" class="skill-star">
-                    <div></div>
-                    <div></div>
-                </div>
+                <ul id="star-a" class="skill-star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul id="star-b" class="skill-star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul id="star-c" class="skill-star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul id="star-d" class="skill-star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul id="star-e" class="skill-star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </section>
         
         <section id="portfolio" class="home-section">
-            <div class="container">
-                <div class="portfolio-wrap">
-                    <div class="portfolio-block">
-                        <div class="portfolio-img"></div>
-                        <div class="portfolio-content">
-                            <p>Stay Children</p>
-                        </div>
+            <div id="prot-title" class="home-title">
+                <h3>PORTFOLIO</h3>
+            </div>
+            <div class="portfolio-wrap">
+                <div class="portfolio-block">
+                    <div class="portfolio-img"></div>
+                    <div class="portfolio-content">
+                        <p>Stay Children</p>
                     </div>
-                    <div class="portfolio-block">
-                        <div class="portfolio-img"></div>
-                        <div class="portfolio-content">name</div>
-                    </div>
-                    <div class="portfolio-block">
-                        <div class="portfolio-img"></div>
-                        <div class="portfolio-content">name</div>
+                </div>
+                <div class="portfolio-block">
+                    <div class="portfolio-img"></div>
+                    <div class="portfolio-content">
+                        <p>Stay Children</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="home-section" style="display:none;">
-            <div id="footer" class="home-section">See You!</div>
+        
+        <section id="contact" class="home-section">
+            <div id="prot-title" class="home-title">
+                <h4 style="color:#FFFFFF;">CONTACT ME</h4>
+            </div>
+            <ul id="contact-text" class="section-text">
+                <li>
+                    <a href="mailto:alexian853@gmail.com">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-info">alexian853@gmail.com</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:0978206925"><div class="contact-icon">
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-info">+886-978206925</div></a>
+                </li>
+            </ul>
+            <div id="footer">- See You! -</div>
         </section>
 
 

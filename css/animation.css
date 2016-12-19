@@ -1,7 +1,7 @@
-.homepage-content {
-    -skrollr-animation-name: homepage-content-ani;
+#homepage-text {
+    -skrollr-animation-name: homepage-text-ani;
 }
-@-skrollr-keyframes homepage-content-ani {
+@-skrollr-keyframes homepage-text-ani {
     0   { transform: translate(0%,0); }
     600 { transform: translate(-150%,0); }
 }
@@ -21,10 +21,10 @@
         transform: translate(0vw,0vw); }
     3000{transform: translate(53vw,-20vw);}
 }
-.about-text{
-     -skrollr-animation-name: about-text-ani;
+#about-a-text{
+     -skrollr-animation-name: about-a-text-ani;
 }
-@-skrollr-keyframes about-text-ani {
+@-skrollr-keyframes about-a-text-ani {
     1600{
         opacity: 0;
         transform: translate(0,0%);
@@ -51,7 +51,7 @@
     4000{ transform: translate(0,100%); }
     4600{ transform: translate(0,0%); }
 }
-.about-b-text{
+#about-b-text{
     -skrollr-animation-name: about-b-text-ani;
 }
 @-skrollr-keyframes about-b-text-ani {
@@ -68,10 +68,10 @@
 	-skrollr-animation-name: grad-ani;
 }
 @-skrollr-keyframes grad-ani {
-    4800{transform: translate(0,-200%);}
+    4800{transform: translate(0,-300%);}
     5400{transform: translate(0,0%);}
     6400{transform: translate(0,0%);}
-    7000{transform: translate(0,-220%);}
+    7000{transform: translate(0,-300%);}
 }
 .about-b-pass {
     -skrollr-animation-name: about-b-pass-ani;
@@ -93,7 +93,7 @@
        transform: translate(0,0%);
     }
 }
-.about-c-text{
+#about-c-text{
     -skrollr-animation-name: about-c-text-ani;
 }
 @-skrollr-keyframes about-c-text-ani {
@@ -154,7 +154,7 @@
     9600{transform: translate(0,100%);}
     10200{transform: translate(0,0%);}
 }
-.skill-text{
+#skill-text {
     -skrollr-animation-name: skill-text-ani;
 }
 @-skrollr-keyframes skill-text-ani {
@@ -234,4 +234,63 @@
 @-skrollr-keyframes portfolio-ani {
     12000{transform: translate(0,100%);}
     12600{transform: translate(0,0%);}
+}
+.portfolio-wrap{
+    -skrollr-animation-name: portfolio-wrap-ani;
+}
+@-skrollr-keyframes portfolio-wrap-ani {
+    12600{opacity: 0;
+        transform: translate(20%,0);}
+    13200{opacity: 1;
+        transform: translate(5%,0);}
+    13800{
+        transform: translate(0%,0);
+    }
+}
+#contact{
+    -skrollr-animation-name: contact-ani;
+}
+@-skrollr-keyframes contact-ani {
+    14000{transform: translate(0,100%);}
+    14600{transform: translate(0,0%);}
+}
+#footer{
+    -skrollr-animation-name: footer-ani;
+}
+@-skrollr-keyframes footer-ani {
+    14800{transform: translate(0,100%);}
+    15200{transform: translate(0,0%);}
+}
+.left-shoulder{
+    -skrollr-animation-name: left-shoulder-ani;
+}
+@-skrollr-keyframes left-shoulder-ani {
+    14800{
+        left: -10%;
+        transform: rotate(15deg);
+    }
+    15200{
+        left: 0%;
+        transform: rotate(35deg);
+    }
+}
+
+.left-arm{
+    -skrollr-animation-name: left-arm-ani;
+}
+@-skrollr-keyframes left-arm-ani {
+    2400{transform: rotate(-8deg);}
+    2800{transform: rotate(60deg);}
+    3200{transform: rotate(60deg);}
+    3600{transform: rotate(-8deg);}
+    14800{
+        top: 80%;
+        left: 0%;
+        transform: rotate(-8deg);
+    }
+    15200{
+        top: 100%;
+        left: 20%;
+        transform: rotate(130deg);
+    }
 }
