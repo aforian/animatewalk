@@ -40,8 +40,8 @@
 }
 @-skrollr-keyframes about-a-pass-ani {
     3600{ transform: translate(0,100%); }
-    4000{ transform: translate(0,44%); }
-    4600{ transform: translate(0,-50%); }
+    4000{ transform: translate(0,0%); }
+    4600{ transform: translate(0,0%); }
     5000{ transform: translate(0,-100%); }
 }
 #about-b {
@@ -78,8 +78,8 @@
 }
 @-skrollr-keyframes about-b-pass-ani {
     6000{ transform: translate(0,100%); }
-    6400{ transform: translate(0,56%); }
-    7000{ transform: translate(0,-44%); }
+    6400{ transform: translate(0,0%); }
+    7000{ transform: translate(0,0%); }
     7400{ transform: translate(0,-100%); }
 }
 #about-c {

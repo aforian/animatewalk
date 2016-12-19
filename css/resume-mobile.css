@@ -30,8 +30,8 @@ h4{
 .boy, .grad-wrap {
     z-index: 20;
     right: 0%;
-    width: 140px;
-    height: 280px;
+    width: 120px;
+    height: 240px;
     bottom: 10%;
 }
 .portfolio-block {
@@ -55,15 +55,15 @@ h4{
 .about-a-pass, .about-b-pass{
     z-index: 100;
     position: absolute;
-    top: 0;
+    top: -30%;
     width: 100%;
     height: 100%;
 }
 .about-a-pass{
-    background: url(../image/resumeimg.svg) 100% no-repeat;
+    background: url(../image/resumeimg.svg) top/100% no-repeat;
 }
 .about-b-pass{
-    background: url(../image/gradhat.svg) 100% no-repeat;
+    background: url(../image/gradhat.svg) 0% 20%/ 100% no-repeat;
 }
 .airplane {
     position: absolute;
