@@ -265,32 +265,18 @@
     -skrollr-animation-name: left-shoulder-ani;
 }
 @-skrollr-keyframes left-shoulder-ani {
-    14800{
-        left: -10%;
-        transform: rotate(15deg);
-    }
-    15200{
-        left: 0%;
-        transform: rotate(35deg);
-    }
+    14800{transform: translate(0,0%), rotate(15deg);}
+    15200{transform: translate(0,10%),rotate(35deg);}
 }
 
 .left-arm{
     -skrollr-animation-name: left-arm-ani;
 }
 @-skrollr-keyframes left-arm-ani {
-    2400{transform: rotate(-8deg);}
-    2800{transform: rotate(60deg);}
-    3200{transform: rotate(60deg);}
-    3600{transform: rotate(-8deg);}
-    14800{
-        top: 80%;
-        left: 0%;
-        transform: rotate(-8deg);
-    }
-    15200{
-        top: 100%;
-        left: 20%;
-        transform: rotate(130deg);
-    }
+    2400{transform: translate(0,0%) rotate(-8deg);}
+    2800{transform: translate(0,0%) rotate(60deg);}
+    3200{transform: translate(0,0%) rotate(60deg);}
+    3600{transform: translate(0,0%) rotate(-8deg);}
+    14800{transform: translate(0,0%) rotate(-8deg);}
+    15200{transform: translate(0,20%) rotate(130deg);}
 }
