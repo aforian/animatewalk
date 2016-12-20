@@ -4,7 +4,6 @@
 }
 body{
     overflow: hidden;
-    text-align: left;
 }
 p{
     font-size: 18px;
@@ -58,10 +57,10 @@ h4{
     -ms-transform: translate(100%,0);
     -moz-transform: translate(100%,0);
     -webkit-transform: translate(100%,0);
-    transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 #nav-mobile.active {
     transform: translate(0%,0);
@@ -69,6 +68,10 @@ h4{
     -ms-transform: translate(0%,0);
     -moz-transform: translate(0%,0);
     -webkit-transform: translate(0%,0);
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 .nav-title{
     position: absolute;
@@ -81,8 +84,7 @@ h4{
     font-weight: bolder;
     color: #FFFFFF;
     font-size: 26px;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px; 
 }
 .nav-mobile-wrap{
     position: absolute;
@@ -100,7 +102,23 @@ h4{
     color: #727272;
     background: #FFF;
     text-align: center;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.22);
+    box-shadow: 4px 4px 8px rgba(67, 67, 67, 0.22);
+}
+.scroll-icon {
+    position: absolute;
+    bottom: 2%;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: translate(0,0%) rotate(-45deg);
+    -o-transform: translate(0,0%) rotate(-45deg);
+    -ms-transform: translate(0,0%) rotate(-45deg);
+    -moz-transform: translate(0,0%) rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    animation: scroll-icon-ani 2s infinite linear;
 }
 .boy, .grad-wrap {
     z-index: 100;
@@ -113,13 +131,12 @@ h4{
     width: 100%;
     margin-bottom: 10%;
 }
+#port-01{
+    background: url(../image/port01.jpg) 0/100% no-repeat;
+}
 .portfolio-content {
     bottom: 0;
 }
-.map{
-    width: 100%;
-}
-
 .about-a-pass, .about-b-pass{
     z-index: 100;
     position: absolute;
@@ -191,8 +208,9 @@ h4{
     height: 35px;
     margin-bottom: 40px;
     font-size: 22px;
-    color: #FFF;
-    background: #2f892b;
+    color: #2f892b;
+    background: transparent;
+    border: 2px solid #2f892b;
     border-radius: 5px;
 }
 .skill-star {
@@ -211,8 +229,8 @@ h4{
     left: 0;
     width: 95%;
     padding: 0;
-    height: 38px;
-    margin-top: 37px;
+    height: 35px;
+    margin: 37px 0 3px;
     background: url(../image/star.svg) no-repeat;
 }
 #star-a {left: 10%;}
@@ -264,4 +282,72 @@ h4{
     color: #FFF;
     font-size: 18px;
     padding-left: 10px;
+}
+@keyframes scroll-icon-ani {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        transform: translate(0,0%) rotate(-45deg);
+    }
+    80%{
+        opacity: 0;
+        transform: translate(0,-100%) rotate(-45deg);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,0%) rotate(-45deg);
+    }
+}
+-o-@keyframes scroll-icon-ani {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        -o-transform: translate(0,0%) rotate(-45deg);
+    }
+    80%{
+        opacity: 0;
+        -o-transform: translate(0,-100% rotate(-45deg);
+    }
+    100%{
+        opacity: 0;
+        -o-transform: translate(0,0%) rotate(-45deg);
+    }
+}
+-moz-@keyframes scroll-icon-ani {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        -moz-transform: translate(0,0%) rotate(-45deg);
+    }
+    80%{
+        opacity: 0;
+        -moz-transform: translate(0,-100%) rotate(-45deg);
+    }
+    100%{
+        opacity: 0;
+        -moz-transform: translate(0,0%) rotate(-45deg);
+    }
+}
+-webkit-@keyframes scroll-icon-ani {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        -webkit-transform: translate(0,0%) rotate(-45deg);
+    }
+    80%{
+        opacity: 0;
+        -webkit-transform: translate(0,-100%) rotate(-45deg);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: translate(0,0%) rotate(-45deg);
+    }
 }

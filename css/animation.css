@@ -1,3 +1,11 @@
+#homepage {
+	-skrollr-animation-name: homepage-ani;
+}
+@-skrollr-keyframes homepage-ani {
+    1000{ transform: translate(0,0%); }
+    1600{ transform: translate(0,-100%); }
+}
+}
 #homepage-text {
     -skrollr-animation-name: homepage-text-ani;
 }
