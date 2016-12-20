@@ -4,7 +4,7 @@ $(document).ready(function(){
             winheight = $(window).height(),
             htmlheight = $(document).height(),
             percenttop = (wintop+winheight)/htmlheight*100,
-            home_section = $(".home-section");
+            home_section = $(".home-section"),
             section_num = home_section.length;
         $(".page-progress").css({"width":percenttop+"%"});
         for(i=0; i<section_num; i++){
@@ -29,7 +29,8 @@ $(document).ready(function(){
         $("html,body").animate({"scrollTop":$(scrollpos).offset().top},700,'easeInOutExpo');
         return false;
     })
-    $(".nav-icon, .nav-back").click(function(){
+    
+    $("#nav-icon, #nav-back").click(function(){
         $("#nav-mobile").toggleClass('active');
     })
     /*導覽列按鈕---end*/
@@ -46,9 +47,14 @@ $(document).ready(function(){
     
     /*--重置人物高度--*/
     $(window).resize(function(){
-        $(".boy").heightresize(2);
-        $(".grad-wrap").heightresize(2);
+        autoheight(".boy",2);
+        autoheight(".grad-wrap",2);
     });
+    function autoheight (selector,radio){
+        var item_width = $(selector).width();
+        $(selector).height() = item_width * radio;
+    }
+    /*
     (function($){
         $.fn.extend({
             heightresize: function(radio){
