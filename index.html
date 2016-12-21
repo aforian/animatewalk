@@ -17,6 +17,9 @@
     </head>
     <body>
         <!--nav begin-->
+        <div id="loading">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+        </div>
         <nav id="nav-bar">
             <div class="nav-left">
                 ALEX IAN
@@ -244,11 +247,14 @@
         </div>
         <!--character end-->
         
+        <div id="skrollr-body"></div>
         <script type="text/javascript" src="script/skrollr.stylesheets.min.js"></script>
         <script type="text/javascript" src="script/skrollr.js"></script>
         <script> 
             var s = skrollr.init({});
+            $(window).on("load",function(){
+                $('#loading').fadeOut(800);
+            });
         </script>
-        <div id="skrollr-body"></div>
     </body>
 </html>
