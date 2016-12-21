@@ -1,0 +1,172 @@
+body { overflow-x: hidden; }
+p { font-size: 20px;}
+h3, h4 {
+    font: 30px bolder;
+    line-height: 1.4;
+}
+#nav-bar { display: block;}
+#nav-mobile, .nav-title{ display: none;}
+
+.home-section {
+	position: fixed;
+    height: 100vh;
+}
+    #about-a {
+        background: #ACDBEE url(../image/map.svg) 50% 0%/100% no-repeat;
+    }
+    #about-b {
+        background: #8cdd81 url(../image/university.svg) 70% 50%/30% no-repeat;
+    }
+.scroll-icon {
+    background: url(../image/mouse.svg) center / 90% no-repeat;
+    animation: scroll-icon-ani 2s infinite linear;
+    -o-animation: scroll-icon-ani 2s infinite linear;
+    -moz-animation: scroll-icon-ani 2s infinite linear;
+    -webkit-animation: scroll-icon-ani 2s infinite linear;
+}
+    .scroll-icon > i {
+        display: none;
+    }
+.boy, .grad-wrap {
+    position: fixed;
+    z-index: 100;
+    width: 13%;
+    left: 43.5%;
+    top: 30%;
+}
+.about-a-pass, .about-b-pass{
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+}
+    .about-a-pass{
+        background: url(../image/resumeimg.svg) center / contain no-repeat;
+    }
+    .about-b-pass{
+        background: url(../image/gradhat.svg) 0% 20%/ cover no-repeat;
+    }
+.airplane {
+    position: absolute;
+    top:37vw;
+    left:30.5vw;
+}
+.home-title { top: 70px;}
+.about-title{display: block;}
+.section-text{
+    position: absolute;
+    text-align: left;
+}
+    #homepage-text{
+        top: 45%;
+        left: 20%;
+        width: 20%;
+        padding: 0 10px;
+    }
+    #about-a-text {
+        top: 30%;
+        left: 20%;
+    }
+    #about-b-text,#about-c-text {
+        top: 25%;
+        left: 18%;
+        width: 20%;
+    }
+    #skill-text {
+        width: 80%;
+        top: 25%;
+        left: 23%;
+    }
+    #skill-text:before{
+        content: '';
+        display: inline-block;
+        padding-bottom: 20%； 
+    }
+        #skill-text > label {
+            padding: 10px 15px;
+            height: 50px;
+            font-size: 30px;
+            border: 3px solid #2f892b;
+        }
+.star-wrap {
+	position: absolute;
+    display: inline-block;
+    right: 20%;
+    top: 25%;
+    width: 25%;
+    height: 360px;
+}
+.star-wrap:before{
+    content: '';
+    display: inline-block;
+    padding-bottom: 20%； 
+}
+.skill-star {
+    top: 0;
+    width: 20%;
+    height: 360px;
+}
+    .skill-star > li {
+        height: 50px;
+        margin-bottom: 40px;
+    }
+    #star-a {left: 0%;}
+    #star-b {left: 20%;}
+    #star-c {left: 40%;}
+    #star-d {left: 60%;}
+    #star-e {left: 80%;}
+
+.about-c-img {
+	position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 50%;
+}
+.about-c-img:before {
+    content: '';
+    display: inline-block;
+    padding-bottom: 60%;
+    vertical-align: middle;
+}
+.portfolio-block {
+    width: 30%;
+    margin: 10%;
+}
+    #port-01{
+        background: url(../image/port01.jpg) center/cover no-repeat;
+    }
+    .portfolio-content {
+        bottom: 0;
+    }
+#contact-text {
+    top: 40%;
+    left: 18%;
+    width: 20%;
+    height: 30%;
+    padding: 0;
+    list-style: none;
+} 
+
+@keyframes scroll-icon-ani {
+    0%{ opacity: 0;}
+    25%{ opacity: 1;}
+    75%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+-o-@keyframes scroll-icon-ani {
+    0%{ opacity: 0;}
+    25%{ opacity: 1;}
+    75%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+-moz-@keyframes scroll-icon-ani {
+    0%{ opacity: 0;}
+    25%{ opacity: 1;}
+    75%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+-webkit-@keyframes scroll-icon-ani {
+    0%{ opacity: 0;}
+    25%{ opacity: 1;}
+    75%{ opacity: 1;}
+    100%{ opacity: 0;}
+}

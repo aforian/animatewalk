@@ -4,30 +4,29 @@
 	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#3D4565;}
-	.st1{fill:#F29219;}
-	.st2{fill:#F5B039;}
-	.st3{fill:#2A3143;}
-	.st4{fill:#445074;}
+	.st1{fill:none;}
+	.st2{fill:#2A3143;}
+	.st3{fill:#445074;}
+	.st4{fill:#445074;enable-background:new    ;}
 </style>
 <path class="st0" d="M-138.1,61.6"/>
 <g>
 	<g>
 		<line class="st1" x1="438.5" y1="156.4" x2="443.7" y2="154.7"/>
-		<line class="st2" x1="443" y1="157.9" x2="448.3" y2="156.3"/>
+		<line class="st1" x1="443" y1="157.9" x2="448.3" y2="156.3"/>
 	</g>
-	<path class="st0" d="M600,229l-0.4-0.2l0.4-0.2L300,104.6L0,228.6l0.4,0.2L0,229l116.1,53.6v114.2c0,35.8,82.3,84.4,183.9,84.4
-		s183.9-50.6,183.9-84.4V282.5l70.4-32.5L554,358.4c-5.4,2.2-9.3,7.5-9.3,13.8c0,4.6,2.1,8.7,5.4,11.5l-3.8,103.2h0
+	<path class="st0" d="M600,229l-0.4-0.2l0.4-0.2l-300-124L0,228.6l0.4,0.2L0,229l116.1,53.6v114.2c0,35.8,82.3,84.4,183.9,84.4
+		s183.9-50.6,183.9-84.4V282.5l70.4-32.5L554,358.4c-5.4,2.2-9.3,7.5-9.3,13.8c0,4.6,2.1,8.7,5.4,11.5l-3.8,103.2l0,0
 		c0,4.8,6,8.7,13.4,8.7s13.4-3.9,13.4-8.7l-3.8-103.3c3.2-2.7,5.3-6.8,5.3-11.3c0-6.3-3.9-11.7-9.5-13.8l0.3-113.3L600,229z"/>
-	<polygon class="st3" points="0,229 300,367.4 600,229 600,241.2 300,379.6 0,241.2 	"/>
+	<polygon class="st2" points="0,229 300,367.4 600,229 600,241.2 300,379.6 0,241.2 	"/>
 	<g>
 		<line class="st1" x1="590.8" y1="229.6" x2="596.3" y2="229.6"/>
-		<line class="st2" x1="594.8" y1="229.6" x2="600.3" y2="229.6"/>
+		<line class="st1" x1="594.8" y1="229.6" x2="600.3" y2="229.6"/>
 	</g>
 	<g>
-		<ellipse class="st3" cx="300" cy="223.2" rx="25.2" ry="13.7"/>
-		<ellipse class="st4" cx="300" cy="216.8" rx="21" ry="11.5"/>
+		<ellipse class="st2" cx="300" cy="223.2" rx="25.2" ry="13.7"/>
+		<ellipse class="st3" cx="300" cy="216.8" rx="21" ry="11.5"/>
 	</g>
 </g>
-<path class="st0" d="Mnan,nancnan,nan,nan,nan,nan,nancnan,nan,nan,nan,nan,nancnan,nan,nan,nan,nan,nancnan,nan,nan,nan,nan,nanz"
-	/>
+<path class="st4" d="M0,0"/>
 </svg>

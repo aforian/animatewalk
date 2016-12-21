@@ -3,33 +3,35 @@ $(document).ready(function(){
         var wintop = $(window).scrollTop(),
             winheight = $(window).height(),
             htmlheight = $(document).height(),
-            percenttop = (wintop+winheight)/htmlheight*100,
-            home_section = $(".home-section"),
-            section_num = home_section.length;
+            scrollwithin = [0,1600,10200,12600,14600,15200],
+            percenttop = (wintop+winheight)/htmlheight*100;
         $(".page-progress").css({"width":percenttop+"%"});
-        for(i=0; i<section_num; i++){
-            j=i+1;
-            if( wintop >= home_section.eq(i).offset().top && wintop < home_section.eq(j).offset().top){
+        for(i=0; i<$navitem_num; i++){
+            var j=i+1;
+            if( wintop >= scrollwithin[i] && wintop < scrollwithin[j]){
                 $(".nav-item").removeClass('active').eq(i).addClass('active');
             }
         };
-        console.log(wintop);
-        
-        var right_hand=$(".right-shoulder, .right-arm");
+        var $right_hand=$(".right-shoulder, .right-arm");
         if( wintop==0 || percenttop>99.9){
-            right_hand.addClass("sayhi");
+            $right_hand.addClass("sayhi");
         }else{
-            right_hand.removeClass("sayhi");
+            $right_hand.removeClass("sayhi");
         }
     });
     
     /*導覽列按鈕---*/
-    $(".nav-item").click(function(){
-        var scrollpos =  $(this).attr("href");
-        $("html,body").animate({"scrollTop":$(scrollpos).offset().top},700,'easeInOutExpo');
-        return false;
-    })
-    
+    var $navitem = $(".nav-item"),
+        $navitem_num = $navitem.length,
+        scrolllong = [0,3000,11500,13200,14600];
+    for(var i=0; i<$navitem_num; i++){
+        $navitem.eq(i).click({num:i},function(e){
+            $navitem.removeClass('active');
+            $(this).addClass('active');
+            n=e.data.num;
+            $("html,body").stop().animate({"scrollTop":scrolllong[n]},800,'easeInOutExpo');
+        });
+    }
     $("#nav-icon, #nav-back").click(function(){
         $("#nav-mobile").toggleClass('active');
     })
@@ -46,25 +48,16 @@ $(document).ready(function(){
     /*--滾動人物動態end--*/
     
     /*--重置人物高度--*/
+    autoheight(".boy",2);
+    autoheight(".grad-wrap",2);
     $(window).resize(function(){
         autoheight(".boy",2);
         autoheight(".grad-wrap",2);
     });
     function autoheight (selector,radio){
         var item_width = $(selector).width();
-        $(selector).height() = item_width * radio;
+        $(selector).css({"height": item_width* radio});
     }
-    /*
-    (function($){
-        $.fn.extend({
-            heightresize: function(radio){
-                return this.each(function(){
-                    var item_width = $(this).width();
-                    return $(this).css({"height": item_width* radio});
-                });
-            }
-        });
-    })(jQuery);
     /*--重置人物高度end--*/
     
 })
